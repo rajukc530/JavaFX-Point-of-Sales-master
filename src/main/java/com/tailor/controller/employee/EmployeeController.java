@@ -43,7 +43,7 @@ public class EmployeeController implements Initializable, EmployeeInterface {
     private TableColumn<Employee, Long> idColumn;
     @FXML
     private TableColumn<Employee, String> firstnameColumn, lastnameColumn, usernameColumn,
-            passwordColumn, phoneColumn, addressColumn;
+            passwordColumn, phoneColumn, addressColumn , typeColumn;
     @FXML
     private TextField searchField;
     @FXML
@@ -72,6 +72,7 @@ public class EmployeeController implements Initializable, EmployeeInterface {
         passwordColumn.setCellValueFactory(new PropertyValueFactory<>("password"));
         phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
         addressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
+        typeColumn.setCellValueFactory(new PropertyValueFactory<>("type"));
 
         employeeTable.setItems(EMPLOYEELIST);
 

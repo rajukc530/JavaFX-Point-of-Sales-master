@@ -27,7 +27,7 @@ public class Employee implements Serializable {
     private String phone;
     @Column(name = "address")
     private String address;
-    @Column(name = "type", insertable = false)
+    @Column(name = "type")
     private String type;
     
     public Employee(){
@@ -57,6 +57,17 @@ public class Employee implements Serializable {
     public Employee(long id, String firstName, String lastName, 
             String userName, String password, String phone, String address, String type) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.password = password;
+        this.phone = phone;
+        this.address = address;
+        this.type = type;
+    }
+    
+    public Employee(String firstName, String lastName, 
+            String userName, String password, String phone, String address, String type) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;

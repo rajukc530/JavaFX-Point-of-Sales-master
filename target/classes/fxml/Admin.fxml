@@ -88,10 +88,10 @@
                               <Image url="@../images/user.png" />
                            </image>
                         </ImageView>
-                        <Label fx:id="userLabel" layoutX="56.0" layoutY="121.0" styleClass="pane-user-text" text="Bond, James" />
+                        <Label fx:id="userLabel" layoutX="56.0" layoutY="121.0" styleClass="pane-user-text" />
                      </children>
                   </Pane>
-                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Administrator">
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Dashboard">
                      <graphic>
                         <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                            <image>

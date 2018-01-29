@@ -92,6 +92,10 @@
                         <Insets right="10.0" />
                      </GridPane.margin>
                   </TextField>
+                  <Label text="Type" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="typeBox" prefHeight="25.0" prefWidth="200.0" promptText="-Select-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  
+                  
                </children>
             </GridPane>
          </children>
