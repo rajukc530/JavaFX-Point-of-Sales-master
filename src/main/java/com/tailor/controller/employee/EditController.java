@@ -5,7 +5,11 @@ import com.tailor.interfaces.EmployeeInterface;
 import com.tailor.model.EmployeeModel;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -38,6 +42,12 @@ public class EditController implements Initializable, EmployeeInterface {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         employeeModel = new EmployeeModel();
+        List<String> list = new ArrayList<String>();
+        ObservableList<String> observableList = FXCollections.observableList(list);
+        observableList.add("admin");
+        observableList.add("employee");
+        observableList.add("hr");
+        typeBox.setItems(observableList);
         resetValues();
     }
 
@@ -59,7 +69,8 @@ public class EditController implements Initializable, EmployeeInterface {
                     usernameField.getText(),
                     DigestUtils.sha1Hex(passwordField.getText()),
                     phoneField.getText(),
-                    addressArea.getText()
+                    addressArea.getText(),
+                    typeBox.getSelectionModel().getSelectedItem().toString()
             );
 
             employeeModel.updateEmployee(editedEmployee);
@@ -82,6 +93,7 @@ public class EditController implements Initializable, EmployeeInterface {
         passwordField.setText(employee.getPassword());
         phoneField.setText(employee.getPhone());
         addressArea.setText(employee.getAddress());
+        typeBox.getSelectionModel().select(employee.getType());
     }
 
     private void resetValues() {
@@ -91,6 +103,7 @@ public class EditController implements Initializable, EmployeeInterface {
         passwordField.setText("");
         phoneField.setText("");
         addressArea.setText("");
+        typeBox.valueProperty().setValue(null);
     }
 
     @FXML
