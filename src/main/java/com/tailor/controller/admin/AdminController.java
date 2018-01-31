@@ -178,6 +178,11 @@ public class AdminController implements Initializable {
     public void staffAction(ActionEvent event) throws Exception {
         windows("/fxml/Employee.fxml", "Employee", event);
     }
+    
+    @FXML
+    public void customerAction(ActionEvent event) throws Exception {
+        windows("/fxml/Customer.fxml", "Customer", event);
+    }
 
     @FXML
     public void logoutAction(ActionEvent event) throws Exception {

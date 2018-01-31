@@ -1,5 +1,6 @@
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\report\ViewController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\purchase\AddController.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\CustomerDao.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\login\LoginController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\employee\EmployeeController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\EmployeeDao.java
@@ -8,7 +9,9 @@ D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\contro
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Sale.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\pos\PosController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Product.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\customer\EditController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\supplier\SupplierController.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\interfaces\CustomerInterface.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\pdf\PrintInvoice.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\admin\AdminController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\sales\SalesController.java
@@ -22,6 +25,7 @@ D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\contro
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Category.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\employee\EditController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\supplier\EditController.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\model\CustomerModel.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\model\PurchaseModel.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\product\EditController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\ProductDao.java
@@ -29,14 +33,17 @@ D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\contro
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Supplier.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\interfaces\SupplierInterface.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Invoice.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\customer\CustomerController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\CategoryDao.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\model\SalesModel.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\employee\AddController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\pos\InvoiceController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\PurchaseDao.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\model\EmployeeModel.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Customer.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\interfaces\CategoryInterface.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\interfaces\SaleInterface.java
+D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\controller\customer\AddController.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\dao\SaleDao.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\entity\Item.java
 D:\API\GIT\tailerMS\JavaFX-Point-of-Sales-master\src\main\java\com\tailor\interfaces\PurchaseInterface.java

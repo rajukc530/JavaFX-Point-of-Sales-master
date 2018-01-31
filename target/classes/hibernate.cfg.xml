@@ -23,5 +23,6 @@
 		<mapping class="com.tailor.entity.Purchase" />
 		<mapping class="com.tailor.entity.Sale" />
 		<mapping class="com.tailor.entity.Supplier" />
+                <mapping class="com.tailor.entity.Customer" />
 	</session-factory>
 </hibernate-configuration>
